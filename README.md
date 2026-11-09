@@ -4,7 +4,7 @@ Automated Playwright tests (TypeScript) for the login page of [Sauce Demo](https
 
 ## Scenarios tested
 
-I designed 25 scenarios (happy path, negative cases and edge cases) and automated 6 of them in the first iteration. All expected results were verified manually on https://www.saucedemo.com/ before automation.
+I designed 23 scenarios (happy path, negative cases and edge cases) and automated 6 of them in the first iteration. All expected results were verified manually on https://www.saucedemo.com/ before automation.
 
 ### Happy path
 
