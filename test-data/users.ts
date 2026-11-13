@@ -11,5 +11,10 @@ export const users = {
     lockedOut: {
         username: 'locked_out_user',
         password: 'secret_sauce'
+    },
+    wrong_password: {
+        username: 'standard_user',
+        password: 'wrong_password'
     }
+
 } satisfies Record<string, User>;

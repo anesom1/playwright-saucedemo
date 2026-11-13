@@ -6,7 +6,7 @@ export class LoginPage {
     readonly passwordInput: Locator;
     readonly loginButton: Locator;
     readonly errorMessage: Locator;
-    readonly loginCredentials: Locator;
+    readonly acceptedUsernames: Locator;
     readonly loginPassword: Locator;
 
     constructor(page: Page) {
@@ -16,7 +16,7 @@ export class LoginPage {
         this.passwordInput = page.locator('[data-test="password"]');
         this.loginButton = page.locator('[data-test="login-button"]');
         this.errorMessage = page.locator('[data-test="error"]');
-        this.loginCredentials = page.locator('[data-test="login-credentials"]');
+        this.acceptedUsernames = page.locator('[data-test="login-credentials"]');
         this.loginPassword = page.locator('[data-test="login-password"]');
     }
 
