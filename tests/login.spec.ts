@@ -42,7 +42,7 @@ test.describe('Login page', () => {
 
     // Expect the error message to be visible with the correct text
     await expect(loginPage.errorMessage).toBeVisible();
-    await expect(loginPage.errorMessage).toHaveText(messages.username_required.msg);
+    await expect(loginPage.errorMessage).toHaveText(messages.usernameRequired.msg);
   
     // Expect page to remain on the login page with the correct URL
     await expect(page).toHaveURL('/');
@@ -50,11 +50,11 @@ test.describe('Login page', () => {
 
   test('NEG-04: Attempt to log in with a valid username and an invalid password', async ({ page }) => {
     // Fill in the username for standard_user and an invalid password
-    await loginPage.login(users.wrong_password.username, users.wrong_password.password);
+    await loginPage.login(users.wrongPassword.username, users.wrongPassword.password);
 
     // Expect the error message to be visible with the correct text
     await expect(loginPage.errorMessage).toBeVisible();
-    await expect(loginPage.errorMessage).toHaveText(messages.wrong_credentials.msg);
+    await expect(loginPage.errorMessage).toHaveText(messages.wrongCredentials.msg);
     
     // Expect page to remain on the login page with the correct URL
     await expect(page).toHaveURL('/');
@@ -82,6 +82,6 @@ test.describe('Login page', () => {
     // Expect the error message to be visible with the correct text
     await expect(loginPage.errorMessage).toBeVisible();
   
-    await expect(loginPage.errorMessage).toHaveText(messages.not_logged_in.msg);  
+    await expect(loginPage.errorMessage).toHaveText(messages.notLoggedIn.msg);  
   });
 })

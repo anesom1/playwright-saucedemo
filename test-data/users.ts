@@ -12,7 +12,7 @@ export const users = {
         username: 'locked_out_user',
         password: 'secret_sauce'
     },
-    wrong_password: {
+    wrongPassword: {
         username: 'standard_user',
         password: 'wrong_password'
     }
